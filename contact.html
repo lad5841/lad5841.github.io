@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LAD — Contact</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="tabs" aria-label="Primary">
+      <div class="container">
+        <a class="tab" href="index.html">Overview</a>
+        <a class="tab" href="projects.html">Projects</a>
+        <a class="tab" href="cv.html">CV</a>
+        <a class="tab is-active" href="contact.html" aria-current="page">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container main">
+    <section class="panel">
+      <h1>Contact</h1>
+      <p>Email is usually best: <a href="mailto:you@example.com">you@example.com</a></p>
+
+      <form class="form" action="mailto:you@example.com" method="post" enctype="text/plain">
+        <label>
+          Your name
+          <input name="name" type="text" required />
+        </label>
+
+        <label>
+          Your email
+          <input name="email" type="email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <button class="button" type="submit">Send</button>
+      </form>
+
+      <p class="muted">
+        Note: mailto forms rely on the visitor’s email client. If you want a “real” form, use a service
+        like Formspree or Netlify Forms.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> LAD</small>
+    </div>
+  </footer>
+</body>
+</html>

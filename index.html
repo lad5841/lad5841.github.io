@@ -1,1 +1,90 @@
-<h1> LAD5841 TEST</h1>
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LAD — Portfolio</title>
+  <meta name="description" content="Personal portfolio of LAD." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-grid">
+      <img class="avatar" src="assets/img/profile.jpg" alt="Portrait of LAD" />
+
+      <div class="header-text">
+        <h1>LAD</h1>
+        <p class="subtitle">[Your role / tagline — e.g. “Software Engineer · Data · Research”]</p>
+
+        <ul class="meta">
+          <li><strong>Location:</strong> [City, UK]</li>
+          <li><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></li>
+          <li><strong>Links:</strong>
+            <a href="[https://github.com/youruser]">GitHub</a> ·
+            <a href="[https://www.linkedin.com/in/youruser]">LinkedIn</a> ·
+            <a href="[https://scholar.google.com/]">Google Scholar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <nav class="tabs" aria-label="Primary">
+      <div class="container">
+        <a class="tab is-active" href="index.html" aria-current="page">Overview</a>
+        <a class="tab" href="projects.html">Projects</a>
+        <a class="tab" href="cv.html">CV</a>
+        <a class="tab" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container main" tabindex="-1">
+    <section class="panel">
+      <h2>About</h2>
+      <p>
+        Write a short bio here. Keep it punchy: who you are, what you do, and what you’re looking for.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Highlights</h2>
+      <ul class="bullets">
+        <li>Key achievement or focus area #1</li>
+        <li>Key achievement or focus area #2</li>
+        <li>Key achievement or focus area #3</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Latest</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Project / Publication / Role</h3>
+          <p>One-liner summary. What it is, what you used, impact.</p>
+          <p class="card-links">
+            <a href="projects.html">Read more</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Another highlight</h3>
+          <p>One-liner summary.</p>
+          <p class="card-links">
+            <a href="cv.html">See CV</a>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> LAD · Built on GitHub Pages</small>
+    </div>
+  </footer>
+</body>
+</html>
