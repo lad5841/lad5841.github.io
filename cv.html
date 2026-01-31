@@ -25,6 +25,10 @@
       <div class="cv-header">
         <h1>Curriculum Vitae</h1>
         <div class="muted">Edinburgh · <a href="mailto:lad_5841@outlook.com">lad_5841@outlook.com</a> · +44 (0) 7902 801353</div>
+        <div id="cvActions" class="cv-actions" aria-label="CV controls">
+          <button id="cvShowAll" class="button" type="button">Expand all details</button>
+          <button id="cvHideAll" class="button" type="button">Collapse all details</button>
+        </div>
       </div>
 
       <h2>Education</h2>
@@ -110,6 +114,12 @@
       </div>
 
       <h2>Skills</h2>
+      <div class="toolbar" aria-label="Skills filter">
+        <label class="search">
+          <span class="muted">Filter skills</span>
+          <input id="skillSearch" type="text" placeholder="e.g. JavaScript, Azure, troubleshooting" autocomplete="off" />
+        </label>
+      </div>
       <ul class="tags">
         <li>Python</li><li>Java</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>C</li><li>Lua</li>
         <li>Microsoft 365</li><li>Microsoft Azure</li><li>IT support</li><li>Troubleshooting</li>
