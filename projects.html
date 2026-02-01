@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Krishan LAD — Projects</title>
+  <meta name="description" content="Projects and coursework highlights by Krishan LAD." />
   <link rel="stylesheet" href="css/styles.css" />
   <script defer src="js/main.js"></script>
 </head>
@@ -23,34 +24,86 @@
   <main class="container main">
     <section class="panel">
       <h1>Projects</h1>
-      <p class="muted">Search and filter as you add more work.</p>
+      <p class="lead">A curated set of work demonstrating software fundamentals, practical problem-solving, and clean presentation.</p>
 
-      <div class="toolbar" aria-label="Project search">
+      <div class="filters" aria-label="Project filters">
         <label class="search">
           <span class="muted">Search projects</span>
-          <input id="projectSearch" type="search" placeholder="Try: web, Java, Azure" />
+          <input id="projectSearch" type="search" placeholder="Try: web, Java, support, Azure" autocomplete="off" />
         </label>
+
+        <div class="chips" role="group" aria-label="Filter by category">
+          <button class="chip" type="button" aria-pressed="false" data-filter="web">Web</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="java">Java</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="python">Python</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="cloud">Cloud</button>
+        </div>
+
+        <p class="hint">Tip: click a category to narrow results; click again to clear.</p>
       </div>
 
       <div class="cards">
-        <article class="card">
+        <article class="card" data-tags="web javascript html css">
           <h2 class="h3">Portfolio website (this site)</h2>
-          <p>Static personal website built for GitHub Pages, with a clean layout and accessible navigation.</p>
+          <p>Static personal website built for GitHub Pages, designed to be fast, accessible, and employer-friendly.</p>
+          <ul class="bullets">
+            <li>Responsive layout, consistent typography, and dark-theme styling.</li>
+            <li>Client-side filtering for skills and projects.</li>
+            <li>CV presented in a clean, scannable structure.</li>
+          </ul>
           <p class="muted">Tech: HTML · CSS · JavaScript</p>
           <p class="card-links">
             <a href="#" aria-label="Link to repository (add your URL)">Code</a>
+            <a href="index.html" aria-label="View live site">Live</a>
           </p>
         </article>
 
-        <article class="card">
-          <h2 class="h3"></h2>
-          <p></p>
-          <p class="muted"></p>
+        <article class="card" data-tags="java coursework algorithms">
+          <h2 class="h3">Coursework: data structures &amp; problem solving</h2>
+          <p>University coursework focusing on core programming concepts and reliable implementation.</p>
+          <ul class="bullets">
+            <li>Clean, readable code with basic testing and debugging.</li>
+            <li>Emphasis on correctness, edge cases, and performance awareness.</li>
+          </ul>
+          <p class="muted">Tech: Java (coursework)</p>
           <p class="card-links">
-            <a href="#">Code</a> · <a href="#">Demo</a>
+            <a href="#" aria-label="Add a repository link when available">Code</a>
+          </p>
+        </article>
+
+        <article class="card" data-tags="python automation tools">
+          <h2 class="h3">Utilities &amp; scripts</h2>
+          <p>Small, practical scripts for automation and learning—useful for demonstrating fundamentals and iteration.</p>
+          <ul class="bullets">
+            <li>Input validation, file handling, and clear output formatting.</li>
+            <li>Designed to be simple to run and easy to review.</li>
+          </ul>
+          <p class="muted">Tech: Python</p>
+          <p class="card-links">
+            <a href="#" aria-label="Add a repository link when available">Code</a>
+          </p>
+        </article>
+
+        <article class="card" data-tags="cloud azure learning">
+          <h2 class="h3">Cloud fundamentals (in progress)</h2>
+          <p>Learning track focused on cloud concepts, identity, and practical administration.</p>
+          <ul class="bullets">
+            <li>Hands-on labs and notes to support long-term understanding.</li>
+            <li>Targets: Azure fundamentals, security basics, and best-practice setup.</li>
+          </ul>
+          <p class="muted">Tech: Azure (learning)</p>
+          <p class="card-links">
+            <a href="#" aria-label="Add notes or a repository link when available">Notes</a>
           </p>
         </article>
       </div>
+
+      <hr class="sep" />
+
+      <p class="muted">
+        Want to see something specific? I’m happy to share code samples privately if a repository is not public.
+        <a href="contact.html">Contact me</a>.
+      </p>
     </section>
   </main>
 

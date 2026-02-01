@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Krishan LAD — CV</title>
+  <meta name="description" content="Curriculum Vitae of Krishan LAD (Computer Systems — Software Engineering student)." />
   <link rel="stylesheet" href="css/styles.css" />
   <script defer src="js/main.js"></script>
 </head>
@@ -20,23 +21,72 @@
     </nav>
   </header>
 
-  <main class="container main">
+  <main class="container main" id="main">
     <section class="panel">
       <div class="cv-header">
-        <h1>Curriculum Vitae</h1>
-        <div class="muted">Edinburgh · <a href="mailto:lad_5841@outlook.com">lad_5841@outlook.com</a> · +44 (0) 7902 801353</div>
-        <div id="cvActions" class="cv-actions" aria-label="CV controls">
-          <button id="cvShowAll" class="button" type="button">Expand all details</button>
-          <button id="cvHideAll" class="button" type="button">Collapse all details</button>
+        <div>
+          <h1>Curriculum Vitae</h1>
+          <p class="lead">
+            Third-year Software Engineering student with practical IT support experience, Microsoft 365 administration exposure,
+            and a strong foundation in programming and problem-solving.
+          </p>
+          <div class="cv-meta" aria-label="Contact details">
+            <span>Edinburgh</span>
+            <span>·</span>
+            <a href="mailto:lad_5841@outlook.com">lad_5841@outlook.com</a>
+            <span>·</span>
+            <a href="tel:+447902801353">+44 (0) 7902 801353</a>
+          </div>
+        </div>
+        <div class="btn-row" aria-label="CV actions">
+          <a class="button secondary" href="contact.html">Contact</a>
+          <a class="button" href="projects.html">Projects</a>
         </div>
       </div>
 
-      <h2>Education</h2>
+      <hr class="sep" />
 
-      <div class="cv-item">
+      <h2 id="education">Education</h2>
+
+      <div class="cv-item" id="coursework">
         <div class="cv-when">2024–Present</div>
         <div class="cv-what">
           <strong>BSc Computer Systems (Software Engineering)</strong>, Heriot-Watt University (Edinburgh)
+          <div class="muted">Current: Year 3 (modules listed below). Includes a major group project with an industrial orientation.</div>
+
+          <ul class="bullets">
+  <li><strong>Year 3 (in progress — provisional results)</strong></li>
+  <li><strong>Artificial Intelligence &amp; Intelligent Agents</strong> — 64% (B) <span class="muted">(provisional)</span></li>
+  <li><strong>Data Communications &amp; Networking</strong> — 51% (C) <span class="muted">(provisional)</span></li>
+  <li><strong>Knowledge Management</strong> — 67% (B) <span class="muted">(provisional)</span></li>
+</ul>
+
+<div class="muted" style="margin-top:.35rem;">
+  <strong>Year 3 modules (course content overview)</strong> — includes a major group project with an industrial orientation.
+</div>
+
+<ul class="bullets">
+  <li><strong>Semester 1:</strong> Artificial Intelligence and Intelligent Agents · Data Communications and Networking · Knowledge Management · Software Engineering</li>
+  <li><strong>Semester 2:</strong> Language Processors · Operating Systems &amp; Concurrency · Professional Development · Sociotechnical and Soft Systems</li>
+  <li><strong>Additional:</strong> Two electives (selected from available options)</li>
+</ul>
+
+<div class="muted" style="margin-top:.35rem;">
+  <strong>Year 2 (final results — selected modules)</strong> <span class="muted">(resit attempts omitted)</span>
+</div>
+
+<ul class="bullets">
+  <li>Hardware–Software Interface — 76% (A)</li>
+  <li>Introduction to Data Structures &amp; Algorithms — 79% (A)</li>
+  <li>Web Programming — 63% (B)</li>
+  <li>Programming Languages — 58% (C)</li>
+  <li>User-Centred Experimental Design — 62% (B)</li>
+  <li>Introduction to Software Engineering — 56% (C)</li>
+  <li>Database Management Systems — 41% (D)</li>
+  <li>Data Structures &amp; Algorithms — 55% (C)</li>
+</ul>
+
+          <div class="muted">Source: programme course content (Heriot-Watt University).</div>
         </div>
       </div>
 
@@ -71,17 +121,17 @@
         </div>
       </div>
 
-      <h2>Experience</h2>
+      <h2 id="experience">Experience</h2>
 
       <div class="cv-item">
         <div class="cv-when">July 2022</div>
         <div class="cv-what">
-          <strong>ICT Service Desk (Work Experience/Placement)</strong>, Tameside Metropolitan Council (Tameside)
+          <strong>ICT Service Desk (Work Experience / Placement)</strong>, Tameside Metropolitan Council (Tameside)
           <ul class="bullets">
-            <li>Configured and set up new laptops: unboxing, badging, and imaging devices.</li>
-            <li>Supported service desk and admin tasks, building experience in IT asset management.</li>
-            <li>Followed technical procedures to resolve minor setup issues and ensure devices were deployment-ready.</li>
-            <li>Worked collaboratively with technical staff and service desk colleagues.</li>
+            <li>Configured new laptops end-to-end: unboxing, badging, and imaging devices for deployment.</li>
+            <li>Supported service desk and administrative tasks, developing familiarity with IT asset workflows.</li>
+            <li>Followed documented technical procedures to resolve minor setup issues and ensure device readiness.</li>
+            <li>Worked collaboratively with technical staff and service desk colleagues to meet daily targets.</li>
           </ul>
           <div class="muted">Placement dates confirmed: 4–8 July 2022.</div>
         </div>
@@ -99,16 +149,17 @@
         </div>
       </div>
 
-      <h2>Voluntary Work</h2>
+      <h2 id="volunteering">Voluntary work</h2>
 
       <div class="cv-item">
         <div class="cv-when">Ongoing</div>
         <div class="cv-what">
           <strong>IT Support &amp; Administration</strong>, Shree Ram Mandir (Ashton)
           <ul class="bullets">
-            <li>Manage IT systems including Microsoft 365 administration.</li>
-            <li>Provide computer and printer support, and assist with sound system setup for events.</li>
-            <li>Design graphical posters for community events and support wider community activities.</li>
+            <li>Microsoft 365 administration support and day-to-day IT upkeep.</li>
+            <li>Computer and printer troubleshooting; basic setup and maintenance.</li>
+            <li>Assisted with sound system setup for events.</li>
+            <li>Designed posters and graphics for community events.</li>
           </ul>
         </div>
       </div>
@@ -122,39 +173,16 @@
       </div>
       <ul class="tags">
         <li>Python</li><li>Java</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>C</li><li>Lua</li>
+        <li>Software Engineering</li><li>Operating Systems</li><li>Networking</li><li>AI fundamentals</li><li>Knowledge Management</li>
         <li>Microsoft 365</li><li>Microsoft Azure</li><li>IT support</li><li>Troubleshooting</li>
         <li>Photoshop</li><li>Photopea</li><li>Microsoft Office</li>
       </ul>
 
-      <h2>Achievements &amp; Interests</h2>
-
-      <div class="cv-item">
-        <div class="cv-when">Achievements</div>
-        <div class="cv-what">
-          <ul class="bullets">
-            <li>Contributed to the Greenpower Challenge (2018): designed and tested electric-powered race cars.</li>
-            <li>Geography field study in Iceland (2018): sustainability and environmental change investigation.</li>
-            <li>Competed in the Tameside Hack (2019): developed digital solutions as part of a team.</li>
-            <li>Completed a Building and Repairing Computers course (2021–2022): PC assembly, upgrades, troubleshooting.</li>
-            <li>Full UK Driving Licence (Aug 2024).</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="cv-item">
-        <div class="cv-when">Interests</div>
-        <div class="cv-what">
-          <ul class="bullets">
-            <li>Badminton (7+ years): teamwork and discipline.</li>
-            <li>Martial arts (Karate up to purple/brown belt): resilience and focus.</li>
-            <li>Technology &amp; creative design: IT problem-solving and digital media.</li>
-          </ul>
-        </div>
-      </div>
-
-      <h2>References</h2>
-      <p class="muted">Available upon request.</p>
-
+      <h2>Achievements &amp; interests</h2>
+      <ul class="bullets">
+        <li>Badminton (discipline, resilience, consistency).</li>
+        <li>Interested in building practical systems with clean UX and reliable engineering.</li>
+      </ul>
     </section>
   </main>
 

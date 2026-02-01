@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Krishan LAD — Contact</title>
+  <meta name="description" content="Contact details for Krishan LAD." />
   <link rel="stylesheet" href="css/styles.css" />
   <script defer src="js/main.js"></script>
 </head>
@@ -23,27 +24,53 @@
   <main class="container main">
     <section class="panel">
       <h1>Contact</h1>
+      <p class="lead">Email is usually best. I aim to reply promptly and I’m happy to discuss opportunities, projects, or placements.</p>
+
+      <div class="contact-grid" aria-label="Contact methods">
+        <div class="contact-card">
+          <h2>Email</h2>
+          <p><a href="mailto:lad_5841@outlook.com">lad_5841@outlook.com</a></p>
+          <p class="muted">For roles, include the job title and a short summary of what you’re looking for.</p>
+          <button class="pill" type="button" data-copy="lad_5841@outlook.com" aria-pressed="false">Copy</button>
+        </div>
+
+        <div class="contact-card">
+          <h2>Phone</h2>
+          <p><a href="tel:+447902801353">+44 (0) 7902 801353</a></p>
+          <p class="muted">If I miss your call, please leave a message or email.</p>
+          <button class="pill" type="button" data-copy="+447902801353" aria-pressed="false">Copy</button>
+        </div>
+
+        <div class="contact-card">
+          <h2>Location</h2>
+          <p>Edinburgh, UK</p>
+          <p class="muted">Open to opportunities in Edinburgh and remotely.</p>
+        </div>
+      </div>
+
+      <hr class="sep" />
+
+      <h2>Links</h2>
+      <p class="muted">Add your public profiles and replace the placeholders below.</p>
       <p>
-        Email is usually best: <a href="mailto:lad_5841@outlook.com">lad_5841@outlook.com</a>
-        <button class="pill" type="button" data-copy="lad_5841@outlook.com" aria-pressed="false">Copy</button><br />
-        Phone: <a href="tel:+447902801353">+44 (0) 7902 801353</a>
-        <button class="pill" type="button" data-copy="+447902801353" aria-pressed="false">Copy</button><br />
-        Location: Edinburgh, UK
+        <a href="#" aria-label="GitHub profile (add your URL)">GitHub</a> ·
+        <a href="#" aria-label="LinkedIn profile (add your URL)">LinkedIn</a>
       </p>
 
-      <p class="muted">
-        Links (add your URLs): <a href="#">GitHub</a> · <a href="#">LinkedIn</a>
-      </p>
+      <hr class="sep" />
+
+      <h2>Message</h2>
+      <p class="muted">This form opens your email client (mailto). If you prefer a hosted form later, Formspree or Netlify Forms are good options.</p>
 
       <form class="form" action="mailto:lad_5841@outlook.com" method="post" enctype="text/plain">
         <label>
           Your name
-          <input name="name" type="text" required />
+          <input name="name" type="text" autocomplete="name" required />
         </label>
 
         <label>
           Your email
-          <input name="email" type="email" required />
+          <input name="email" type="email" autocomplete="email" required />
         </label>
 
         <label>
@@ -51,12 +78,8 @@
           <textarea name="message" rows="6" required></textarea>
         </label>
 
-        <button class="button" type="submit">Send</button>
+        <button class="button" type="submit">Create email</button>
       </form>
-
-      <p class="muted">
-        Note: this form uses your email client (mailto). If you want a hosted form, use Formspree or Netlify Forms.
-      </p>
     </section>
   </main>
 
