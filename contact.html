@@ -3,89 +3,67 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Krishan LAD — Contact</title>
+  <title>Krishan LAD | Contact</title>
   <meta name="description" content="Contact details for Krishan LAD." />
   <link rel="stylesheet" href="css/styles.css" />
   <script defer src="js/main.js"></script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <nav class="tabs" aria-label="Primary">
-      <div class="container">
-        <a class="tab" href="index.html">Overview</a>
-        <a class="tab" href="projects.html">Projects</a>
-        <a class="tab" href="cv.html">CV</a>
-        <a class="tab is-active" href="contact.html" aria-current="page">Contact</a>
-      </div>
-    </nav>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Krishan LAD home">
+        <span class="brand-mark">KL</span>
+        <span>Krishan LAD</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Work</a>
+        <a href="cv.html">CV</a>
+        <a aria-current="page" href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container main">
-    <section class="panel">
-      <h1>Contact</h1>
-      <p class="lead">Email is usually best. I aim to reply promptly and I’m happy to discuss opportunities, projects, or placements.</p>
+  <main id="main" class="container page" tabindex="-1">
+    <header class="page-header">
+      <p class="eyebrow">Contact</p>
+      <h1>Start with email. Keep it simple.</h1>
+      <p>I am based in Edinburgh and open to placement, junior, support, and software-focused opportunities.</p>
+    </header>
 
-      <div class="contact-grid" aria-label="Contact methods">
-        <div class="contact-card">
-          <h2>Email</h2>
-          <p><a href="mailto:lad_5841@outlook.com">lad_5841@outlook.com</a></p>
-          <p class="muted">For roles, include the job title and a short summary of what you’re looking for.</p>
-          <button class="pill" type="button" data-copy="lad_5841@outlook.com" aria-pressed="false">Copy</button>
+    <section class="contact-layout single">
+      <div class="contact-panel">
+        <h2>Direct details</h2>
+        <div class="contact-method">
+          <span>Email</span>
+          <a href="mailto:lad_5841@outlook.com">lad_5841@outlook.com</a>
+          <button class="copy-btn" type="button" data-copy="lad_5841@outlook.com">Copy email</button>
         </div>
-
-        <div class="contact-card">
-          <h2>Phone</h2>
-          <p><a href="tel:+447902801353">+44 (0) 7902 801353</a></p>
-          <p class="muted">If I miss your call, please leave a message or email.</p>
-          <button class="pill" type="button" data-copy="+447902801353" aria-pressed="false">Copy</button>
+        <div class="contact-method">
+          <span>Phone</span>
+          <a href="tel:+447902801353">+44 (0) 7902 801353</a>
+          <button class="copy-btn" type="button" data-copy="+447902801353">Copy phone</button>
         </div>
-
-        <div class="contact-card">
-          <h2>Location</h2>
-          <p>Edinburgh, UK</p>
-          <p class="muted">Open to opportunities in Edinburgh and remotely.</p>
+        <div class="contact-method">
+          <span>LinkedIn</span>
+          <a href="https://www.linkedin.com/in/krishan-lad-804975244/" target="_blank" rel="noopener noreferrer">linkedin.com/in/krishan-lad-804975244</a>
+        </div>
+        <div class="contact-method">
+          <span>Location</span>
+          <strong>Edinburgh, UK</strong>
         </div>
       </div>
-
-      <hr class="sep" />
-
-      <h2>Links</h2>
-      <p class="muted">Add your public profiles and replace the placeholders below.</p>
-      <p>
-        <a href="#" aria-label="GitHub profile (add your URL)">GitHub</a> ·
-        <a href="#" aria-label="LinkedIn profile (add your URL)">LinkedIn</a>
-      </p>
-
-      <hr class="sep" />
-
-      <h2>Message</h2>
-      <p class="muted">This form opens your email client (mailto). If you prefer a hosted form later, Formspree or Netlify Forms are good options.</p>
-
-      <form class="form" action="mailto:lad_5841@outlook.com" method="post" enctype="text/plain">
-        <label>
-          Your name
-          <input name="name" type="text" autocomplete="name" required />
-        </label>
-
-        <label>
-          Your email
-          <input name="email" type="email" autocomplete="email" required />
-        </label>
-
-        <label>
-          Message
-          <textarea name="message" rows="6" required></textarea>
-        </label>
-
-        <button class="button" type="submit">Create email</button>
-      </form>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <small>© <span id="year"></span> Krishan LAD</small>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span>Krishan LAD</span>
+      <span>&copy; <span id="year"></span></span>
+      <a href="mailto:lad_5841@outlook.com">lad_5841@outlook.com</a>
     </div>
   </footer>
 </body>

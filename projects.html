@@ -3,113 +3,121 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Krishan LAD — Projects</title>
-  <meta name="description" content="Projects and coursework highlights by Krishan LAD." />
+  <title>Krishan LAD | Work</title>
+  <meta name="description" content="Selected work, projects, and practical experience by Krishan LAD." />
   <link rel="stylesheet" href="css/styles.css" />
   <script defer src="js/main.js"></script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <nav class="tabs" aria-label="Primary">
-      <div class="container">
-        <a class="tab" href="index.html">Overview</a>
-        <a class="tab is-active" href="projects.html" aria-current="page">Projects</a>
-        <a class="tab" href="cv.html">CV</a>
-        <a class="tab" href="contact.html">Contact</a>
-      </div>
-    </nav>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Krishan LAD home">
+        <span class="brand-mark">KL</span>
+        <span>Krishan LAD</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a aria-current="page" href="projects.html">Work</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container main">
-    <section class="panel">
-      <h1>Projects</h1>
-      <p class="lead">A curated set of work demonstrating software fundamentals, practical problem-solving, and clean presentation.</p>
-
-      <div class="filters" aria-label="Project filters">
-        <label class="search">
-          <span class="muted">Search projects</span>
-          <input id="projectSearch" type="search" placeholder="Try: web, Java, support, Azure" autocomplete="off" />
-        </label>
-
-        <div class="chips" role="group" aria-label="Filter by category">
-          <button class="chip" type="button" aria-pressed="false" data-filter="web">Web</button>
-          <button class="chip" type="button" aria-pressed="false" data-filter="java">Java</button>
-          <button class="chip" type="button" aria-pressed="false" data-filter="python">Python</button>
-          <button class="chip" type="button" aria-pressed="false" data-filter="cloud">Cloud</button>
-        </div>
-
-        <p class="hint">Tip: click a category to narrow results; click again to clear.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card" data-tags="web javascript html css">
-          <h2 class="h3">Portfolio website (this site)</h2>
-          <p>Static personal website built for GitHub Pages, designed to be fast, accessible, and employer-friendly.</p>
-          <ul class="bullets">
-            <li>Responsive layout, consistent typography, and dark-theme styling.</li>
-            <li>Client-side filtering for skills and projects.</li>
-            <li>CV presented in a clean, scannable structure.</li>
-          </ul>
-          <p class="muted">Tech: HTML · CSS · JavaScript</p>
-          <p class="card-links">
-            <a href="#" aria-label="Link to repository (add your URL)">Code</a>
-            <a href="index.html" aria-label="View live site">Live</a>
-          </p>
-        </article>
-
-        <article class="card" data-tags="java coursework algorithms">
-          <h2 class="h3">Coursework: data structures &amp; problem solving</h2>
-          <p>University coursework focusing on core programming concepts and reliable implementation.</p>
-          <ul class="bullets">
-            <li>Clean, readable code with basic testing and debugging.</li>
-            <li>Emphasis on correctness, edge cases, and performance awareness.</li>
-          </ul>
-          <p class="muted">Tech: Java (coursework)</p>
-          <p class="card-links">
-            <a href="#" aria-label="Add a repository link when available">Code</a>
-          </p>
-        </article>
-
-        <article class="card" data-tags="python automation tools">
-          <h2 class="h3">Utilities &amp; scripts</h2>
-          <p>Small, practical scripts for automation and learning—useful for demonstrating fundamentals and iteration.</p>
-          <ul class="bullets">
-            <li>Input validation, file handling, and clear output formatting.</li>
-            <li>Designed to be simple to run and easy to review.</li>
-          </ul>
-          <p class="muted">Tech: Python</p>
-          <p class="card-links">
-            <a href="#" aria-label="Add a repository link when available">Code</a>
-          </p>
-        </article>
-
-        <article class="card" data-tags="cloud azure learning">
-          <h2 class="h3">Cloud fundamentals (in progress)</h2>
-          <p>Learning track focused on cloud concepts, identity, and practical administration.</p>
-          <ul class="bullets">
-            <li>Hands-on labs and notes to support long-term understanding.</li>
-            <li>Targets: Azure fundamentals, security basics, and best-practice setup.</li>
-          </ul>
-          <p class="muted">Tech: Azure (learning)</p>
-          <p class="card-links">
-            <a href="#" aria-label="Add notes or a repository link when available">Notes</a>
-          </p>
-        </article>
-      </div>
-
-      <hr class="sep" />
-
-      <p class="muted">
-        Want to see something specific? I’m happy to share code samples privately if a repository is not public.
-        <a href="contact.html">Contact me</a>.
+  <main id="main" class="container page" tabindex="-1">
+    <header class="page-header">
+      <p class="eyebrow">Work</p>
+      <h1>Projects, coursework, and hands-on technical support.</h1>
+      <p>
+        A focused view of work that shows how I think: practical, clear, and built around the people who need to use it.
       </p>
+    </header>
+
+    <section class="project-stack" aria-label="Selected work">
+      <article class="project-detail" id="portfolio">
+        <div class="project-meta">
+          <span>Website</span>
+          <span>HTML / CSS / JavaScript</span>
+        </div>
+        <div>
+          <h2>Portfolio redesign</h2>
+          <p>
+            A complete static-site redesign for GitHub Pages, replacing placeholder-heavy pages with a sharper profile,
+            direct contact options, and a more confident visual system.
+          </p>
+          <ul class="clean-list">
+            <li>Responsive layout with a profile-led first screen.</li>
+            <li>Accessible landmarks, skip link, visible focus states, and readable contrast.</li>
+            <li>Simple JavaScript for copy actions and a no-message contact shortcut.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project-detail" id="it-support">
+        <div class="project-meta">
+          <span>Support</span>
+          <span>Microsoft 365 / Devices / Events</span>
+        </div>
+        <div>
+          <h2>Community IT administration</h2>
+          <p>
+            Voluntary IT support for <a href="https://shreerammandirashton.co.uk/" target="_blank" rel="noopener noreferrer">Shree Ram Mandir</a>, covering practical administration, troubleshooting, and event support.
+          </p>
+          <ul class="clean-list">
+            <li>Microsoft 365 administration support and day-to-day account help.</li>
+            <li>Computer, printer, and general device troubleshooting.</li>
+            <li>Sound system setup and poster design for community events.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project-detail" id="coursework">
+        <div class="project-meta">
+          <span>University</span>
+          <span>Software / Systems / Web</span>
+        </div>
+        <div>
+          <h2>Software and systems coursework</h2>
+          <p>
+            University work across programming fundamentals, data structures, algorithms, web programming, networking,
+            operating systems, language processors, and AI fundamentals.
+          </p>
+          <ul class="clean-list">
+            <li>Java, Python, C, JavaScript, HTML, CSS, and Lua.</li>
+            <li>Emphasis on correctness, debugging, readability, and edge cases.</li>
+            <li>Current Year 3 focus includes networking, AI, operating systems, and professional software development.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project-detail">
+        <div class="project-meta">
+          <span>Placement</span>
+          <span>ICT Service Desk</span>
+        </div>
+        <div>
+          <h2>Laptop deployment and service desk support</h2>
+          <p>
+            Work experience with <a href="https://www.tameside.gov.uk/" target="_blank" rel="noopener noreferrer">Tameside Metropolitan Council</a>, preparing laptops for deployment and supporting service desk activity.
+          </p>
+          <ul class="clean-list">
+            <li>Unboxed, badged, imaged, and prepared devices for users.</li>
+            <li>Followed technical procedures and asset workflows.</li>
+            <li>Worked with service desk colleagues to meet daily setup targets.</li>
+          </ul>
+        </div>
+      </article>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <small>© <span id="year"></span> Krishan LAD</small>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span>Krishan LAD</span>
+      <span>&copy; <span id="year"></span></span>
+      <a href="mailto:lad_5841@outlook.com">lad_5841@outlook.com</a>
     </div>
   </footer>
 </body>

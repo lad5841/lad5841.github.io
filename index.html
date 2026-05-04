@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Krishan LAD — Portfolio</title>
-  <meta name="description" content="Personal portfolio and CV of Krishan LAD (BSc Computer Systems — Software Engineering student at Heriot-Watt University)." />
+  <title>Krishan LAD | Portfolio</title>
+  <meta name="description" content="Portfolio of Krishan LAD, a Computer Systems Student focused on practical systems, support, and clean web experiences." />
   <link rel="stylesheet" href="css/styles.css" />
   <script defer src="js/main.js"></script>
 </head>
@@ -13,137 +13,144 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="container header-grid">
-      <img class="avatar" src="assets/img/pfp.jpg" alt="Portrait of Krishan LAD" />
-
-      <div class="header-text">
-        <h1>Krishan LAD</h1>
-        <p class="subtitle">BSc Computer Systems (Software Engineering) · Year 3 student · Heriot-Watt University (Edinburgh)</p>
-
-        <ul class="meta">
-          <li><strong>Location:</strong> Edinburgh, UK</li>
-          <li><strong>Email:</strong> <a href="mailto:lad_5841@outlook.com">lad_5841@outlook.com</a></li>
-          <li><strong>Links:</strong>
-            <a href="#" aria-label="GitHub profile (add your URL)">GitHub</a> ·
-            <a href="#" aria-label="LinkedIn profile (add your URL)">LinkedIn</a>
-          </li>
-        </ul>
-
-        <div class="btn-row" aria-label="Primary actions">
-          <a class="button" href="projects.html">View projects</a>
-          <a class="button secondary" href="cv.html">View CV</a>
-          <a class="button secondary" href="contact.html">Contact</a>
-        </div>
-      </div>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Krishan LAD home">
+        <span class="brand-mark">KL</span>
+        <span>Krishan LAD</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a aria-current="page" href="index.html">Home</a>
+        <a href="projects.html">Work</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-
-    <nav class="tabs" aria-label="Primary">
-      <div class="container">
-        <a class="tab is-active" href="index.html" aria-current="page">Overview</a>
-        <a class="tab" href="projects.html">Projects</a>
-        <a class="tab" href="cv.html">CV</a>
-        <a class="tab" href="contact.html">Contact</a>
-      </div>
-    </nav>
   </header>
 
-  <main id="main" class="container main" tabindex="-1">
-
-    <section id="summary" class="panel">
-      <h2>Professional summary</h2>
-      <p class="lead">
-        Third-year Software Engineering student focused on building clean, reliable systems and user-friendly interfaces.
-        Developing strong foundations in software engineering, networking, operating systems, and intelligent systems.
-      </p>
-
-      <ul class="tags" aria-label="Key focus areas">
-        <li>Software engineering</li>
-        <li>Operating systems</li>
-        <li>Networking</li>
-        <li>AI fundamentals</li>
-        <li>Web development</li>
-        <li>IT support</li>
-      </ul>
+  <main id="main" tabindex="-1">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Systems Student</p>
+          <h1>Building practical software with a calm support mindset.</h1>
+          <p class="hero-text">
+            I am a BSc Computer Systems student at <a href="https://www.hw.ac.uk/" target="_blank" rel="noopener noreferrer">Heriot-Watt University</a>, focused on software engineering,
+            web development, operating systems, networking, and the kind of IT support that keeps real people moving.
+          </p>
+          <div class="action-row" aria-label="Primary actions">
+            <a class="btn primary" href="projects.html">View work</a>
+            <a class="btn" href="cv.html">Read CV</a>
+            <a class="btn quiet" href="mailto:lad_5841@outlook.com">Email me</a>
+          </div>
+        </div>
+        <figure class="portrait-frame">
+          <img src="assets/img/pfp.jpg" alt="Portrait of Krishan LAD" />
+          <figcaption>
+            <span>Edinburgh, UK</span>
+            <span>Open to placements and junior opportunities</span>
+          </figcaption>
+        </figure>
+      </div>
     </section>
 
-    <section id="competencies" class="panel">
-      <h2>Core competencies</h2>
-      <div class="cards">
-        <article class="card">
-          <h3 class="h3">Programming</h3>
-          <p class="muted">Python · Java · C · JavaScript · HTML · CSS · Lua</p>
-          <p>Comfortable with fundamentals, debugging, and writing readable, maintainable code.</p>
-        </article>
+    <section class="section-band">
+      <div class="container split-section">
+        <div>
+          <p class="section-kicker">Profile</p>
+          <h2>Technical, service-minded, and easy to work with.</h2>
+        </div>
+        <p>
+          My work sits between software fundamentals and hands-on operational support. I like building interfaces
+          that are clear, systems that are predictable, and documentation that helps the next person understand what changed.
+        </p>
+      </div>
+    </section>
 
-        <article class="card">
-          <h3 class="h3">Systems &amp; software</h3>
-          <p class="muted">Operating systems · concurrency · networking · language processing</p>
-          <p>Interested in how systems work end-to-end: performance, reliability, and good engineering practice.</p>
+    <section class="container section">
+      <div class="section-heading">
+        <p class="section-kicker">Focus areas</p>
+        <h2>Where I am growing strongest</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="card-number">01</span>
+          <h3>Software engineering</h3>
+          <p>Writing readable code, thinking through requirements, testing assumptions, and improving systems in measured steps.</p>
         </article>
-
-        <article class="card">
-          <h3 class="h3">IT &amp; cloud</h3>
-          <p class="muted">Microsoft 365 · Azure fundamentals · device setup · troubleshooting</p>
-          <p>Hands-on support experience with a service-focused, practical approach.</p>
+        <article class="feature-card">
+          <span class="card-number">02</span>
+          <h3>Web interfaces</h3>
+          <p>HTML, CSS, JavaScript, accessibility basics, responsive layouts, and simple interactions that make sites feel polished.</p>
         </article>
-
-        <article class="card">
-          <h3 class="h3">Communication</h3>
-          <p class="muted">Customer support · documentation · teamwork</p>
-          <p>Clear, calm communication with a focus on requirements, outcomes, and follow-through.</p>
+        <article class="feature-card">
+          <span class="card-number">03</span>
+          <h3>Systems knowledge</h3>
+          <p>Operating systems, concurrency, networking, language processors, and the low-level ideas behind reliable software.</p>
+        </article>
+        <article class="feature-card">
+          <span class="card-number">04</span>
+          <h3>IT support</h3>
+          <p>Microsoft 365, device setup, troubleshooting, printer support, sound systems, and clear communication under pressure.</p>
         </article>
       </div>
     </section>
 
-    <section id="highlights" class="panel">
-      <h2>Experience snapshot</h2>
-      <div class="cards">
-        <article class="card">
-          <h3 class="h3">ICT Service Desk placement</h3>
-          <p>Configured and prepared laptops for deployment, supporting service desk operations and asset processes.</p>
-          <p class="card-links"><a href="cv.html#experience">See details in CV</a></p>
-        </article>
-
-        <article class="card">
-          <h3 class="h3">Voluntary IT support</h3>
-          <p>Microsoft 365 administration, device and printer support, sound system setup, and event poster design.</p>
-          <p class="card-links"><a href="cv.html#volunteering">See volunteering</a> · <a href="contact.html">Get in touch</a></p>
-        </article>
-
-        <article class="card">
-          <h3 class="h3">Course focus (Year 3)</h3>
-          <p>Artificial Intelligence, networking, software engineering, operating systems, and language processors.</p>
-          <p class="card-links"><a href="cv.html#coursework">View current modules</a></p>
-        </article>
+    <section class="section-band">
+      <div class="container highlight-strip">
+        <div>
+          <span class="metric">Year 3</span>
+          <span class="metric-label">Computer Systems Student</span>
+        </div>
+        <div>
+          <span class="metric">2022</span>
+          <span class="metric-label">ICT service desk placement</span>
+        </div>
+        <div>
+          <span class="metric">M365</span>
+          <span class="metric-label">Voluntary admin support</span>
+        </div>
       </div>
     </section>
 
-    <section id="featured" class="panel">
-      <h2>Featured work</h2>
-      <p class="muted">A selection of work that shows both technical and communication skills. Expand this section as you add projects.</p>
-
-      <div class="cards">
-        <article class="card" data-tags="web javascript html css">
-          <h3 class="h3">Portfolio website</h3>
-          <p>Static site built for GitHub Pages with accessible navigation, filtering, and a clean CV layout.</p>
-          <p class="muted">Tech: HTML · CSS · JavaScript</p>
-          <p class="card-links"><a href="projects.html">View project page</a></p>
+    <section class="container section">
+      <div class="section-heading">
+        <p class="section-kicker">Selected work</p>
+        <h2>Projects and practical experience</h2>
+      </div>
+      <div class="work-list">
+        <article class="work-item">
+          <div>
+            <span class="work-type">Website</span>
+            <h3>Portfolio redesign</h3>
+          </div>
+          <p>Static GitHub Pages portfolio rebuilt around fast loading, better hierarchy, accessible structure, and clean contact paths.</p>
+          <a href="projects.html#portfolio">Details</a>
         </article>
-
-        <article class="card" data-tags="it microsoft 365 support">
-          <h3 class="h3">Microsoft 365 administration support</h3>
-          <p>Practical administration and troubleshooting in a community environment, supporting day-to-day operations.</p>
-          <p class="muted">Areas: user support · device setup · documentation</p>
-          <p class="card-links"><a href="cv.html#volunteering">Related experience</a></p>
+        <article class="work-item">
+          <div>
+            <span class="work-type">Support</span>
+            <h3>Community IT administration</h3>
+          </div>
+          <p>Ongoing practical support covering Microsoft 365, computers, printers, event sound setup, and visual communication.</p>
+          <a href="projects.html#it-support">Details</a>
+        </article>
+        <article class="work-item">
+          <div>
+            <span class="work-type">University</span>
+            <h3>Software and systems coursework</h3>
+          </div>
+          <p>Coursework across programming, data structures, web programming, networking, AI, operating systems, and concurrency.</p>
+          <a href="projects.html#coursework">Details</a>
         </article>
       </div>
     </section>
-
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <small>© <span id="year"></span> Krishan LAD · Built on GitHub Pages</small>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span>Krishan LAD</span>
+      <span>&copy; <span id="year"></span></span>
+      <a href="mailto:lad_5841@outlook.com">lad_5841@outlook.com</a>
     </div>
   </footer>
 </body>
