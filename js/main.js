@@ -43,4 +43,10 @@
       showToast("Copied");
     });
   });
+
+  document.querySelectorAll("[data-print-cv]").forEach((button) => {
+    button.addEventListener("click", () => {
+      window.print();
+    });
+  });
 })();
