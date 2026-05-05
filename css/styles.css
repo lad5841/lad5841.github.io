@@ -461,6 +461,16 @@ h4 {
   color: var(--deep);
 }
 
+.project-note {
+  margin: 18px 0 0;
+  border-left: 3px solid var(--gold);
+  padding: 10px 12px;
+  background: #fbfbf7;
+  color: var(--muted);
+  font-size: .94rem;
+  font-weight: 700;
+}
+
 .clean-list {
   margin: 18px 0 0;
   padding-left: 1.2rem;
@@ -468,6 +478,112 @@ h4 {
 
 .clean-list li {
   margin: 8px 0;
+}
+
+.proof-figure {
+  max-width: 620px;
+  margin: 20px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.proof-figure img {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+}
+
+.proof-figure figcaption {
+  padding: 10px 12px;
+  color: var(--muted);
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.project-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.project-gallery img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+.project-gallery figcaption {
+  padding: 8px 10px;
+  color: var(--muted);
+  font-size: .84rem;
+  font-weight: 700;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 12px;
+  padding: 18px;
+  background: rgba(14, 45, 43, .9);
+}
+
+.image-lightbox[hidden] {
+  display: none;
+}
+
+.image-lightbox-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.image-lightbox-close {
+  min-height: 40px;
+  border: 1px solid rgba(255, 255, 255, .35);
+  border-radius: 6px;
+  padding: 7px 12px;
+  background: rgba(255, 255, 255, .12);
+  color: #fff;
+  font: inherit;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.image-lightbox-close:hover {
+  background: rgba(255, 255, 255, .2);
+}
+
+.image-lightbox-figure {
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+.image-lightbox-figure img {
+  max-width: 100%;
+  max-height: calc(100vh - 110px);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
 .module-groups {
@@ -727,6 +843,10 @@ h4 {
   .case-study {
     grid-template-columns: 1fr 1fr;
   }
+
+  .project-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
@@ -765,6 +885,7 @@ h4 {
   .feature-grid,
   .highlight-strip,
   .case-study,
+  .project-gallery,
   .module-groups,
   .skill-groups,
   .timeline-item {
