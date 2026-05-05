@@ -3,10 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Krishan LAD | Portfolio</title>
   <meta name="description" content="Portfolio of Krishan LAD, a Computer Systems Student focused on practical systems, support, and clean web experiences." />
-  <link rel="stylesheet" href="css/styles.css" />
-  <script defer src="js/main.js"></script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script defer src="/js/main.js"></script>
 </head>
 
 <body>
@@ -14,15 +17,15 @@
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="Krishan LAD home">
+      <a class="brand" href="/" aria-label="Krishan LAD home">
         <span class="brand-mark">KL</span>
         <span>Krishan LAD</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a aria-current="page" href="index.html">Home</a>
-        <a href="projects.html">Work</a>
-        <a href="cv.html">CV</a>
-        <a href="contact.html">Contact</a>
+        <a aria-current="page" href="/">Home</a>
+        <a href="/projects/">Work</a>
+        <a href="/cv/">CV</a>
+        <a href="/contact/">Contact</a>
       </nav>
     </div>
   </header>
@@ -38,16 +41,16 @@
             web development, operating systems, networking, and the kind of IT support that keeps real people moving.
           </p>
           <div class="action-row" aria-label="Primary actions">
-            <a class="btn primary" href="projects.html">View work</a>
-            <a class="btn" href="cv.html">Read CV</a>
+            <a class="btn primary" href="/projects/">View work</a>
+            <a class="btn" href="/cv/">Read CV</a>
             <a class="btn quiet" href="mailto:lad_5841@outlook.com">Email me</a>
           </div>
         </div>
         <figure class="portrait-frame">
-          <img src="assets/img/pfp.jpg" alt="Portrait of Krishan LAD" />
+          <img src="/assets/img/pfp.jpg" alt="Portrait of Krishan LAD" />
           <figcaption>
-            <span>Edinburgh, UK</span>
-            <span>Open to placements and junior opportunities</span>
+            <span>Edinburgh during term time / Manchester during holidays</span>
+            <span>Open to Edinburgh and Manchester internships, seasonal work, and flexible remote or part-time roles</span>
           </figcaption>
         </figure>
       </div>
@@ -124,7 +127,7 @@
             <h3>Portfolio redesign</h3>
           </div>
           <p>Static GitHub Pages portfolio rebuilt around fast loading, better hierarchy, accessible structure, and clean contact paths.</p>
-          <a href="projects.html#portfolio">Details</a>
+          <a href="/projects/#portfolio">Details</a>
         </article>
         <article class="work-item">
           <div>
@@ -132,7 +135,7 @@
             <h3>Community IT administration</h3>
           </div>
           <p>Ongoing practical support covering Microsoft 365, computers, printers, event sound setup, and visual communication.</p>
-          <a href="projects.html#it-support">Details</a>
+          <a href="/projects/#it-support">Details</a>
         </article>
         <article class="work-item">
           <div>
@@ -140,7 +143,7 @@
             <h3>Software and systems coursework</h3>
           </div>
           <p>Coursework across programming, data structures, web programming, networking, AI, operating systems, and concurrency.</p>
-          <a href="projects.html#coursework">Details</a>
+          <a href="/projects/#coursework">Details</a>
         </article>
       </div>
     </section>
