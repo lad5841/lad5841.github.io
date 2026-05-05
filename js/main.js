@@ -50,6 +50,58 @@
     });
   });
 
+  document.querySelectorAll("[data-expand-card]").forEach((card) => {
+    const toggle = card.querySelector("[data-expand-toggle]");
+    const extra = card.querySelector(".feature-extra");
+    if (!toggle || !extra) return;
+
+    toggle.addEventListener("click", () => {
+      const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!isExpanded));
+      extra.hidden = isExpanded;
+    });
+  });
+
+  const revealItems = document.querySelectorAll(
+    ".feature-card, .work-item, .project-detail, .cv-section, .contact-panel, .highlight-strip > div"
+  );
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.16 });
+
+    revealItems.forEach((item) => {
+      item.classList.add("reveal");
+      revealObserver.observe(item);
+    });
+  } else {
+    revealItems.forEach((item) => item.classList.add("is-visible"));
+  }
+
+  const backToTop = document.createElement("button");
+  backToTop.className = "back-to-top";
+  backToTop.type = "button";
+  backToTop.textContent = "^";
+  backToTop.setAttribute("aria-label", "Back to top");
+  document.body.appendChild(backToTop);
+
+  const updateBackToTop = () => {
+    const isVisible = window.scrollY > 520;
+    backToTop.classList.toggle("is-visible", isVisible);
+    backToTop.setAttribute("aria-hidden", String(!isVisible));
+    backToTop.tabIndex = isVisible ? 0 : -1;
+  };
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  updateBackToTop();
+  window.addEventListener("scroll", updateBackToTop, { passive: true });
+
   const galleryImages = document.querySelectorAll("[data-gallery-image]");
   if (galleryImages.length) {
     const lightbox = document.createElement("div");
