@@ -393,6 +393,31 @@ h4 {
   gap: 18px;
 }
 
+.contact-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: center;
+}
+
+.contact-cta h2 {
+  max-width: 760px;
+}
+
+.contact-cta p {
+  max-width: 740px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.contact-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
 .highlight-strip > div {
   padding: 10px 0;
 }
@@ -928,9 +953,14 @@ h4 {
 @media (max-width: 920px) {
   .hero-grid,
   .split-section,
+  .contact-cta,
   .contact-layout,
   .cv-title {
     grid-template-columns: 1fr;
+  }
+
+  .contact-cta-actions {
+    justify-content: flex-start;
   }
 
   .feature-grid,
